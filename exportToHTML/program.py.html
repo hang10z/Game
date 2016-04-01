@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>program.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(204,120,50); font-weight: bold; }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(0,128,128); }
+.s3 { color: rgb(104,151,187); }
+.s4 { color: rgb(204,120,50); }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+program.py</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">import </span><span class="s1">random 
+ 
+print(</span><span class="s2">'--------------------------------------------------'</span><span class="s1">) 
+print(</span><span class="s2">'     GUESS THAT NUMBER GAME'</span><span class="s1">) 
+print(</span><span class="s2">'--------------------------------------------------'</span><span class="s1">) 
+print() 
+ 
+the_number = random.randint(</span><span class="s3">0</span><span class="s4">, </span><span class="s3">100</span><span class="s1">) 
+guess = -</span><span class="s3">1</span><span class="s1"> 
+ 
+</span><span class="s0">while </span><span class="s1">guess != the_number: 
+    guess_text = input(</span><span class="s2">'Guess the number between 0 and 100: '</span><span class="s1">) 
+ 
+    guess = int(guess_text) 
+ 
+    </span><span class="s0">if </span><span class="s1">guess &lt; the_number: 
+        print(</span><span class="s2">'too low'</span><span class="s1">) 
+    </span><span class="s0">elif </span><span class="s1">guess &gt; the_number: 
+        print(</span><span class="s2">'too high'</span><span class="s1">) 
+    </span><span class="s0">else</span><span class="s1">: 
+        print(</span><span class="s2">'you win!'</span><span class="s1">) 
+ 
+print(</span><span class="s2">'done'</span><span class="s1">) 
+</span></pre>
+</body>
+</html>
